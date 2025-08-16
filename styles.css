@@ -10,7 +10,7 @@ body {
 header {
     background-color: #fff;
     color: #c75d7b; /* Um tom de rosa mais suave */
-    padding: 1rem 0;
+    padding: 0.7rem 0; /* Padding vertical reduzido */
     text-align: center;
     position: sticky; /* Faz o header "grudar" no topo da tela ao rolar */
     top: 0;
@@ -22,6 +22,12 @@ header {
 header h1 {
     margin: 0;
     font-weight: 500;
+    font-size: 1.5rem; /* Tamanho da fonte reduzido */
+}
+
+.logo {
+    height: 55px; /* Altura do logo reduzida */
+    margin-bottom: 0.2rem; /* Espaço entre o logo e o título reduzido */
 }
 
 /* Conteúdo Principal */
@@ -155,8 +161,37 @@ main {
 /* Rodapé */
 footer {
     text-align: center;
-    padding: 1.5rem;
+    padding: 2.5rem 2rem; /* Aumentar o padding */
     background-color: #333;
+    color: #f1f1f1; /* Cor um pouco mais suave que branco puro */
+    margin-top: 3rem; /* Aumentar a margem */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
     color: #fff;
-    margin-top: 2rem;
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Para a transformação funcionar corretamente */
+}
+
+.social-links a:hover {
+    color: #c75d7b; /* Cor rosa do header */
+    transform: scale(1.2); /* Efeito de zoom */
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0;
 }
